@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "moment",
+  "description": "A momentum dashboard clone",
+  "version": "0.0.0.1",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "browser_action": {
+    "default_icon": "m.png",
+    "default_title": "Moment"
+  },
+  "permissions": ["http://*/", "https://*/", "storage", "activeTab"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

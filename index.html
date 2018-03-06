@@ -1,0 +1,23 @@
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Moment</title>
+  
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+  
+<body ng-controller="mainCtrl" ng-cloak>
+	<div class="time-box">
+			<h3 class="time">{{hour}} : {{min}} {{ampm}}</h3>
+	</div>
+  <div class="quote-box">
+  <p class="quote" ngfx-fade-in="quote">{{quote}}</p>
+  <h5 class="author delay" ngfx-fade-in="author" ng-if="author">-{{author}}</h5>
+  </div>
+  <script src="angular.min.js"></script>
+  <script src="angular-animate.min.js"></script>
+  <script src="angular-fx.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
