@@ -12,7 +12,7 @@
                 $scope.min = n(d.getMinutes());
                 $scope.ampm = $scope.hour >= 12 ? "pm" : "am";
             }
-            getTime(); //Changes
+            getTime(); //gitblock
             var timer = function() {
                 getTime();
                 $timeout(timer, 60000);
